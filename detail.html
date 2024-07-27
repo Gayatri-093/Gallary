@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallary | A photo search app</title>
+    <link rel="stylesheet" href="./assets/common.css">
+    <link rel="stylesheet" href="./assets/detail.css">
+</head>
+<body>
+    
+    <!-- NavBar -->
+    <nav>
+        <a href="./"><img src="./assets/logo.png" alt="logo" class="logo"></a>
+        <a href="./"><h1 class="title">Gallary</h1></a>
+        <form action="./search.html" method="get">
+            <input type="text" name="q" autocomplete="off" class="search" placeholder="Search anything..">
+            <input type="submit" value="SEARCH" class="search">
+        </form>
+
+    </nav>
+
+    <!-- Main -->
+    <section>
+
+    <h1 class="heading">&lt;DETAIL FOR - <span id="image_id"></span> /&gt;</h1>
+
+    <div class="detail">
+        <img alt="Primary" id="detail_image">
+        <div class="content">
+            <h1 id="description_text"></h1>
+            <br>
+            <h3>Uploaded by- @ <span id="username"></span></h3>
+            <br>
+            <h4>Date - <span id="upload_date"></span></h4>
+            <br>
+            <h5><span id="like_count"></span> Likes (<span id="view_count"></span> Views)</h5>
+            <br>
+            <hr>
+            <br>
+            <h1 class="description" id="alt_description"></h1>
+            <br><br><br>
+            <h5>Base Color</h5>
+            <br>
+            <div id="image_color" class="image_color">
+                <span id="color_text"></span>
+            </div>
+            <br><br> <br> 
+            <a target="_blank" id="download_link" class="button">&lt;DOWNLOAD /&gt;</a>
+
+            <!-- date -->
+            <!-- Like and views -->
+            <!-- alternate description -->
+             <!-- Color of the image -->
+              <!-- Download -->
+        </div>
+    </div>
+    </section>
+
+    <!-- ------------------------ Footer---------------------------------------------- -->
+    <footer>
+        <a href="./"><h5>Gallary</h5></a>
+        <h1>|</h1>
+        <h5>Design by Gayatri</h5>
+        <h1>|</h1>
+        <a href="./">Github</a>
+
+
+    </footer>
+    <script src="./assets/common.js"></script>
+    <script src="./assets/detail.js"></script>
+
+    
+</body>
+</html>
